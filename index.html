@@ -1,0 +1,22 @@
+<html ng-app="myapp">
+    <head></head>
+    <title>
+
+    </title>
+    <body ng-controller="mainCtrl as vm">
+        <ul>
+            <li><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="posts">Posts</a></li>
+        </ul>
+        <ui-view></ui-view>
+        <h1>{{vm.hello}}</h1>
+        <input type="text" ng-model="vm.search">
+        <button ng-click="vm.alertme()">click</button>
+        <ui-view></ui-view>
+    </body>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+<script src="app.js"></script>
+<script src="posts-list/posts-list.component.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.6/angular-ui-router.min.js"></script>
+</html>

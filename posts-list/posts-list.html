@@ -1,0 +1,6 @@
+<ul ng-repeat="post in vm.posts | filter: vm.search">
+    <li>
+        <h5>{{post.title}}</h5>
+        <p>{{post.body}}</p>
+    </li>
+</ul>
